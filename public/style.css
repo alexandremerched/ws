@@ -108,6 +108,11 @@ footer a {
     margin-bottom: 32px;
 }
 
+.idea .content {
+    display: flex;
+    flex-direction: column;
+}
+
 .idea img {
     width: 60px;
     height: 60px;
@@ -122,9 +127,25 @@ footer a {
     margin: 8px 0;
     color: #777;
 }
-
+z
 .idea .description {
+    flex: 1;
     margin: 16px 0;
+}
+
+.idea .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.idea .buttons a {
+    align-self: center;
+}
+
+.idea .buttons button img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0px;
 }
 
 /* modal */
@@ -168,7 +189,7 @@ footer a {
     grid-column: span 2;
 }
 
-form input, form textarea {
+#modal form input, #modal form textarea {
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
@@ -178,13 +199,13 @@ form input, form textarea {
     font-size: 16px;
 }
 
-form label {
+#modal form label {
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.8px;
 }
 
-form a {
+#modal form a {
     width: 150px;
     height: 40px;
     background-color: #ffffff22;
@@ -199,13 +220,13 @@ form a {
     transition: 400ms;
 }
 
-form a:hover {
+#modal form a:hover {
     background: #fff;
     color: #ff5e84;
     text-decoration: none;
 }
 
-form button {
+#modal form button {
     background: white;
     width: 150px;
     height: 40px;
@@ -217,7 +238,7 @@ form button {
     transition: 400ms;
 }
 
-form button:hover {
+#modal form button:hover {
     background-color: #0984e3;
     color: white;
     text-decoration: none;
